@@ -1,0 +1,17 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 mx-4 my-2">
+    <div class="col" *ngFor="let event of events; index as i" routerLink="/single-event">
+        <div class="card h-100 bg-dark text-light">
+            <img src="..." class="card-img-top" width="280px" height="420px">
+            <div class="card-body">
+                <button *ngIf="event.favoption===true; else: elseblock" class="btn btn-info badge text-wrap float-end" (click)="changefav(event.id)">Remove from Fav</button>
+                <ng-template #elseblock>
+                    <button class="btn btn-danger badge text-wrap float-end" (click)="changefav(event.id)">Add to Fav</button>
+                </ng-template>
+                <h4 class="card-title">{{ event.title }}</h4>
+                <p class="card-text">Date: {{ event.date }}</p>
+                <p class="card-text">Venue: {{ event.venue }}</p>
+                <p class="card-text">{{ event.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

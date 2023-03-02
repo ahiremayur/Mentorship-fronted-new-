@@ -1,7 +1,7 @@
 {
     "events":[
         {
-            "id":"001",
+            "id":"1",
             "name":"Mood Indigo",
             "time":"all day",
             "date":"07-04-2023",
@@ -12,7 +12,7 @@
             "favoption":false
         },
         {
-            "id":"002",
+            "id":"2",
             "name":"TechFest",
             "time":"all day",
             "date":"15-06-2023",
@@ -23,7 +23,7 @@
             "favoption":false
         },
         {
-            "id":"003",
+            "id":"3",
             "name":"Mood Indigo",
             "time":"all day",
             "date":"07-04-2023",

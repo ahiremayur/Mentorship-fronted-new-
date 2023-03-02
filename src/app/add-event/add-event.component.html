@@ -1,1 +1,66 @@
-<h2>add-event works!</h2>
+<form class="container-sm" #formData="ngForm">
+    <!--NAME-->
+    <div class="row gy-sm-2">
+        <div class="col-sm-4">
+            <label class="col-form-label me-3">NAME</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.name" class="form-control" type="text" [(ngModel)]="name" name="name">
+        </div>
+    </div>
+    <!--DATE-->
+    <div class="row gy-2">
+        <div class="col-sm-4">
+            <label class="col-form-label">DATE</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.date" class="form-control" type="text" [(ngModel)]="date" name="date">
+        </div>
+    </div>
+    <!--TIME-->
+    <div class="row gy-2">
+        <div class="col-sm-4">
+            <label class="col-form-label">TIME</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.time" class="form-control" type="text" [(ngModel)]="time" name="time">
+        </div>
+    </div>
+    <!--VENUE-->
+    <div class="row gy-2">
+        <div class="col-sm-4">
+            <label class="col-form-label">VENUE</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.venue" class="form-control" type="text" [(ngModel)]="venue" name="venue">
+        </div>
+    </div>
+    <!--BODY-->
+    <div class="row gy-2">
+        <div class="col-sm-4">
+            <label class="col-form-label">NAME</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.body" class="form-control" type="text" [(ngModel)]="body" name="body">
+        </div>
+    </div>
+     <!--IMAGE-->
+     <div class="row gy-2">
+        <div class="col-sm-4">
+            <label class="col-form-label">IMAGE</label>
+        </div>
+        <div class="col">
+            <input [(ngModel)]="event.image" class="form-control" type="text" [(ngModel)]="image" name="image">
+        </div>
+    </div>
+    <!--DESCRIPTION-->
+    <div class="row">
+        <div class="col-sm-4">
+            <label class="col-form-label">DESCRIPTION</label>
+        </div>
+        <div class="col">
+            <textarea [(ngModel)]="event.description" class="form-control" rows="3" [(ngModel)]="description" name="description"></textarea>
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="add()">ADD</button>
+</form>

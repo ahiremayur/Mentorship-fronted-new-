@@ -8,7 +8,7 @@ import events from 'src/event-data.json';
 })
 export class EditEventComponent {
 
-  ID = 1;
+  ID = 0;
   event = events.events[this.ID];
   body = this.event.body;
   date = this.event.date;
@@ -21,16 +21,24 @@ export class EditEventComponent {
   submit() {
     this.event.body = this.body; 
     this.event.date = this.date;
-    this.description = this.description;
-    this.image = this.image;
-    this.name = this.name;
-    this.time = this.time;
-    this.venue = this.venue;
+    this.event.description = this.description;
+    this.event.image = this.image;
+    this.event.name = this.name;
+    this.event.time = this.time;
+    this.event.venue = this.venue;
 
     console.log(events);
   }
   delete() {
     events.events.splice(this.ID, 1);
+    alert("EVENT DELETED");
+    this.event.body = ""; 
+    this.event.date = "";
+    this.event.description = "";
+    this.event.image = "";
+    this.event.name = "";
+    this.event.time = "";
+    this.event.venue = "";
     console.log(events);
   }
 }

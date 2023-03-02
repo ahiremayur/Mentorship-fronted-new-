@@ -1,0 +1,17 @@
+button{
+    margin: 1em;
+}
+label{
+    margin: 0.7em;
+}
+textarea{
+    margin-bottom: 1em;
+}
+form{
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 800px;
+    background-color: rgb(56, 56, 56);
+    margin-top: 2em;
+    color: aliceblue;
+}

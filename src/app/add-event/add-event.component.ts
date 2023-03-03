@@ -7,6 +7,12 @@ import events from 'src/event-data.json';
   styleUrls: ['./add-event.component.css']
 })
 export class AddEventComponent {
+onImageSelected($event: Event) {
+throw new Error('Method not implemented.');
+}
+onSubmit() {
+throw new Error('Method not implemented.');
+}
 
   event:any={};
   body = this.event.body;

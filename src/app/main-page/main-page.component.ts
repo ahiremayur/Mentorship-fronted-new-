@@ -38,11 +38,12 @@ export class MainPageComponent {
   //     favoption: true
   //   }
   // ];
-
+  selectedEvent:any=events[0];
   changefav(i: Number) {
     for (let object of this.events) {
       if (object.id === i) {
         object.favoption = !object.favoption;
+        console.log(object);
       }
     }
   }
